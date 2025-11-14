@@ -1,10 +1,9 @@
-estoque = [
-{"nome": "Teclado", "preco": 150.00, "quantidade": 5},
-{"nome": "Mouse", "preco": 80.00, "quantidade": 12},
-{"nome": "Monitor", "preco": 700.00, "quantidade": 3},
-{"nome": "Headset", "preco": 250.00, "quantidade": 8}
-]
+lista_A = [1, 2, 3, 4, 5]
+lista_B = [4, 5, 6, 7, 8]
+comuns = []
 
-for estoque in estoque :
-    if estoque ["quantidade"] < 10:
-        print ( estoque ["nome"])
+for item_de_A in lista_A:
+    if item_de_A in lista_B:
+        comuns . append (item_de_A)
+
+print(comuns)
